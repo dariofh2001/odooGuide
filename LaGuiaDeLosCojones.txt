@@ -40,7 +40,7 @@ sudo mv /opt/odoo/.odoorc /etc/odoo/odoo.conf
 
 sudo sed -i "s,^\(logfile = \).*,\1"/var/log/odoo/odoo-server.log"," /etc/odoo/odoo.conf
 
-sudo cp /opt/odoo/odoo/debian/init/etc/init.d/odoo && sudo chmod +x /etc/init.d/odoo
+sudo cp /opt/odoo/odoo/debian/init /etc/init.d/odoo && sudo chmod +x /etc/init.d/odoo
 
 sudo ln -s /opt/odoo/odoo/odoo-bin /usr/bin/odoo
 
