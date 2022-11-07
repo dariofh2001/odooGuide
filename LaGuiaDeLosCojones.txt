@@ -16,11 +16,7 @@ sudo chown odoo:odoo /opt/odoo -R
 
 sudo chown odoo:odoo /var/log/odoo -R
 
-!! cuidao con este {
-
 sudo rm /usr/lib/python3/dist-packages/_cffi_backend.cpython-310-x86_64-linux-gnu.so
-
-}
 
 sudo pip install -r /opt/odoo/odoo/requirements.txt
 
@@ -36,9 +32,9 @@ sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin
 
 sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin
 
-sudo su -postgres -c "createuser -s odoo"
+sudo su - postgres -c "createuser -s odoo"
 
-sudo su -odoo -c "/opt/odoo/odoo/odoo-bin --addons-path=/opt/odoo/odoo/addons -s --stop-after-init"
+sudo su - odoo -c "/opt/odoo/odoo/odoo-bin --addons-path=/opt/odoo/odoo/addons -s --stop-after-init"
 
 sudo mv /opt/odoo/.odoorc /etc/odoo/odoo.conf
 
