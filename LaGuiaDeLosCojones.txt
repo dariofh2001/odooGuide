@@ -28,7 +28,7 @@ sudo apt install xfonts-base xfonts-75dpi -y
 
 cd /tmp
 
-wget https://github.com/wkhtml.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 
 sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 
