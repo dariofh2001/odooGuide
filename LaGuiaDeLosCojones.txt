@@ -6,7 +6,7 @@ sudo adduser --system --quiet --shell=/bin/bash --home=/opt/odoo --gecos 'odoo' 
 
 sudo mkdir /etc/odoo && sudo mkdir /var/log/odoo
 
-sudo apt install postgresql postgresql-server-dev-14 git python3 python3-pip build-essential python3-dv libldap2-dev libsasl2-dev python3-setuptools libjpeg-dev nodejs npm git -y
+sudo apt install postgresql postgresql-server-dev-14 git python3 python3-pip build-essential python3-dev libldap2-dev libsasl2-dev python3-setuptools libjpeg-dev nodejs npm git -y
 
 sudo apt install postgresql-client
 
